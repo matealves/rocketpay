@@ -61,8 +61,10 @@ form button {
   color: #121212;
 
   transition: filter 0.3s;
+  /* transition: all 0.3s; */
 }
 
 form button:hover {
   filter: brightness(1.1);
+  /* box-shadow: 0 0 12px #42d3ff; */
 }

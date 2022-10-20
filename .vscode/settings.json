@@ -1,37 +1,37 @@
-{
+// {
   // editor
-  "editor.wordWrap": "on",
-  "editor.fontSize": 18,
-  "editor.lineHeight": 30,
-  "editor.tabSize": 2,
-  "editor.bracketPairColorization.enabled": true,
-  "editor.guides.bracketPairs": true,
-  "editor.minimap.enabled": false,
-  "editor.formatOnSave": true,
-  "editor.formatOnPaste": true,
+  // "editor.wordWrap": "on",
+  // "editor.fontSize": 12,
+  // "editor.lineHeight": 30,
+  // "editor.tabSize": 2,
+  // "editor.bracketPairColorization.enabled": true,
+  // "editor.guides.bracketPairs": true,
+  // "editor.minimap.enabled": false,
+  // "editor.formatOnSave": true,
+  // "editor.formatOnPaste": true,
 
   // explorer
-  "explorer.compactFolders": false,
+  // "explorer.compactFolders": false,
 
   // workbench
-  "workbench.editor.enablePreview": false,
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Omni",
+  // "workbench.editor.enablePreview": false,
+  // "workbench.iconTheme": "material-icon-theme",
+  // "workbench.colorTheme": "Omni",
 
   // prettier
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "prettier.enable": true,
-  "prettier.singleQuote": false,
-  "prettier.tabWidth": 2,
-  "prettier.semi": false,
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // "prettier.enable": true,
+  // "prettier.singleQuote": false,
+  // "prettier.tabWidth": 2,
+  // "prettier.semi": false,
 
   // terminal
-  "terminal.integrated.fontSize": 16,
-  "terminal.integrated.profiles.windows": {
-    "Git Bash": {
-      "source": "Git Bash"
-    }
-  },
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "window.zoomLevel": 0
-}
+  // "terminal.integrated.fontSize": 14,
+  // "terminal.integrated.profiles.windows": {
+  //   "Git Bash": {
+  //     "source": "Git Bash"
+  //   }
+  // },
+  // "terminal.integrated.defaultProfile.windows": "Git Bash",
+  // "window.zoomLevel": 0
+// }
