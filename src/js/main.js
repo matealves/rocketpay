@@ -93,6 +93,9 @@ formCard.addEventListener("submit", (e) => {
   setTimeout(() => {
     toggleLoader();
     toggleMessage("Pedido finalizado", "Dados salvos com sucesso!");
+
+    resetForm();
+    resetCard();
   }, 2000);
 });
 
@@ -144,9 +147,7 @@ const toggleModal = function () {
 [closeModalButton, fadeModal].forEach((el) => {
   el.addEventListener("click", () => {
     toggleModal();
-    // document.location.reload(true);
-    resetForm();
-    resetCard();
+    location.reload();
     cardNumber.focus();
   });
 });
