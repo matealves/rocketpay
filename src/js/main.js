@@ -1,4 +1,4 @@
-import "./css/index.css";
+import "../css/index.css";
 import IMask from "imask";
 
 const ccBgColor01 = document.querySelector(
@@ -81,13 +81,19 @@ const cardNumberPattern = {
 const cardNumberMasked = IMask(cardNumber, cardNumberPattern);
 
 // DOM manipulation
-document.querySelector("form").addEventListener("submit", (e) => {
-  e.preventDefault();
-});
+const formCard = document.querySelector("#form-card");
 
-const addButton = document.querySelector("#add-card");
-addButton.addEventListener("click", () => {
-  alert("Cartão adicionado!");
+formCard.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  toggleLoader();
+
+  setTimeout(() => {
+    toggleLoader();
+    toggleMessage("Pedido finalizado", "Dados salvos com sucesso!");
+
+    formCard.reset();
+  }, 2000);
 });
 
 const cardHolder = document.querySelector("#card-holder");

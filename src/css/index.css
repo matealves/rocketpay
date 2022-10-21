@@ -1,6 +1,9 @@
 @import "base.css";
 @import "credit-card.css";
 @import "form.css";
+@import "steps.css";
+@import "loader.css";
+@import "modal.css";
 
 @media (max-width: 420px) {
   :root {

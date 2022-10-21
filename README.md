@@ -1,48 +1,65 @@
-<h1 align="center"> Explorer Lab #01 </h1>
+<h1 align="center"> Rocketpay </h1>
 
-<p align="center">
-Evento exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnologias WEB.
-</p>
-
-<p align="center">
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
-</p>
-
-<p align="center">
-  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
-</p>
+<h3 align="center">
+Página de pagamento com cartão de crédito, com várias interações!
+</h3>
 
 <br>
+<p align="center">
+  <a href="#visao">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#leng">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#contato">Contato</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="https://rocketpay-azure.vercel.app/" target="_blank">Testar</a> 
+</p>
+<br>
+
+<div id="visao">
+<h1>Visão geral</h1>
+ Projeto desenvolvido para portifólio pessoal, muito comum em sites de <strong>e-commerce</strong>, onde é possível pagar com cartão de crédito. A página possui interações bem legais, ao digitar os dados, eles <strong>atualizam em tempo real</strong> como um tamplate de cartão de crédito ao lado do formulário, e mais... Foi utilizado expressão regular(<strong>Regex</strong>) e a biblioteca <strong>IMask</strong> que <strong>identifica qual a bandeira do cartão utilizado</strong> e o layout se adapta automaticamente, teste no link abaixo.
+</div>
+<br>
+
+<h3 align="center">
+<a href="https://rocketpay-azure.vercel.app/" target="_blank">Testar (preview)</a> 
+<br>
+<br>
+</h3>
 
 <p align="center">
   <img alt="rocketpay" src=".github/project.png" width="100%">
 </p>
 
-## 🚀 Tecnologias
+<!-- <p align = "center">
+  <img src ="assets/img/relogio_readme.jpg" alt = "mockup" />
+</p> -->
+<br>
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+<div id="leng">
+<h1>Tecnologias</h1>
 
-- HTML e CSS
-- JavaScript e JSON
-- [Node e NPM](https://nodejs.org/)
-- [Vite](https://vitejs.dev/)
-- [iMask](https://imask.js.org)
+<img align="center" alt="Js" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+ <img align="center" alt="HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+  <img align="center" alt="CSS" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
 
-## 💻 Projeto
+  <!-- <img align="center" alt="CSS" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"> -->
+</div>
+<br>
+<br>
+<br>
 
-O Rocketpay é um componente que simula o formulário de preenchimento de cartão de crédito, onde é possível adicionar máscara aos inputs e atualizar elementos HTML via DOM.
+<div id="contato">
+<h1>Como entro em contato?</h1>
 
-## 🔖 Layout
+Entre em contato através dos links a seguir!
+<br>
+<br>
+<a href="https://www.linkedin.com/in/mateusalvesds/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
 
-Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/file/gpqavL469k0pPUGOmAQEM9/Explorer-Lab-%2301/duplicate). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+<a href = "mailto:contatomateusalves@hotmail.com"><img src="https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white" target="_blank"></a>
 
-## :memo: Licença
+<a href="https://api.whatsapp.com/send?phone=+5511966616365" target="_blank"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" target="_blank"></a>
 
-Esse projeto está sob a licença MIT.
-
----
-
-Feito com ♥ by Rocketseat :wave: [Participe da nossa comunidade!](https://discord.gg/rocketseat)
+</div>
+<br>
+<br>
+<br>

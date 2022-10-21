@@ -1,21 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="public/cc-icon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rocketpay</title>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="public/cc-icon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <title>Rocketpay</title>
 
-  <body>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+  <body id="checkout-page">
+    <div id="fade" class="hide">
+      <div id="loader" class="spinner-border">
+      </div>
+    </div>
+
+    <div id="fade-modal" class="hide"></div>
+    <div id="modal" class="hide">
+      <div class="modal-header">
+        <h2 class="title-modal">Título Modal</h2>
+        <button id="close-modal">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="message-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus debitis vel optio quis
+          accusamus.
+        </p>
+      </div>
+    </div>
+
+    <div id="steps">
+      <div class="line"></div>
+      <div class="step">
+        <i class="bi bi-person"></i>
+        <p class="">Criar conta</p>
+      </div>
+      <div class="step">
+        <i class="bi bi-geo-alt"></i>
+        <p class="">Endereço</p>
+      </div>
+      <div class="step">
+        <i class="bi bi-credit-card active"></i>
+        <p class="">Pagamento</p>
+      </div>
+    </div>
+    <div id="form-header">
+      <h2>Cadastre seu cartão de crédito</h2>
+      <p>Preencha os campos para concluir o envio do seu pedido</p>
+    </div>
+
     <div id="app">
       <header>
         <img src="logo.svg" alt="ícone rocketpay" />
@@ -23,80 +65,35 @@
 
       <section class="cc">
         <div class="cc-bg">
-          <svg
-            width="360"
-            height="230"
-            viewBox="0 0 360 230"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <mask
-              id="mask0_3_2547"
-              style="mask-type: alpha"
-              maskUnits="userSpaceOnUse"
-              x="0"
-              y="0"
-              width="360"
-              height="230"
-            >
+          <svg width="360" height="230" viewBox="0 0 360 230" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <mask id="mask0_3_2547" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="360"
+              height="230">
               <rect width="360" height="230" rx="15.4011" fill="#16084C" />
             </mask>
             <g mask="url(#mask0_3_2547)">
               <g filter="url(#filter0_f_3_2547)">
                 <path
-                d="M451.518 -135.506C473.881 -89.3531 414.166 -13.4917 318.142 33.9349C222.118 81.3615 126.147 82.3939 103.784 36.2409C81.4215 -9.91221 141.136 -85.7735 237.16 -133.2C333.184 -180.627 429.156 -181.659 451.518 -135.506Z"
-                fill="black"
-                />
+                  d="M451.518 -135.506C473.881 -89.3531 414.166 -13.4917 318.142 33.9349C222.118 81.3615 126.147 82.3939 103.784 36.2409C81.4215 -9.91221 141.136 -85.7735 237.16 -133.2C333.184 -180.627 429.156 -181.659 451.518 -135.506Z"
+                  fill="black" />
               </g>
               <g filter="url(#filter1_f_3_2547)">
                 <path
                   d="M399.134 -169.756C421.497 -123.603 361.783 -47.742 265.758 -0.315356C169.734 47.1113 73.7629 48.1437 51.4003 1.99062C29.0377 -44.1624 88.7521 -120.024 184.776 -167.45C280.8 -214.877 376.772 -215.909 399.134 -169.756Z"
-                  fill="gray"
-                />
+                  fill="gray" />
               </g>
             </g>
             <defs>
-              <filter
-                id="filter0_f_3_2547"
-                x="43.2629"
-                y="-225.286"
-                width="468.777"
-                height="351.306"
-                filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
-              >
+              <filter id="filter0_f_3_2547" x="43.2629" y="-225.286" width="468.777" height="351.306"
+                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
                 <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feBlend
-                  mode="normal"
-                  in="SourceGraphic"
-                  in2="BackgroundImageFix"
-                  result="shape"
-                />
-                <feGaussianBlur
-                  stdDeviation="27.9144"
-                  result="effect1_foregroundBlur_3_2547"
-                />
+                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                <feGaussianBlur stdDeviation="27.9144" result="effect1_foregroundBlur_3_2547" />
               </filter>
-              <filter
-                id="filter1_f_3_2547"
-                x="-9.12087"
-                y="-259.536"
-                width="468.777"
-                height="351.306"
-                filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
-              >
+              <filter id="filter1_f_3_2547" x="-9.12087" y="-259.536" width="468.777" height="351.306"
+                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
                 <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feBlend
-                  mode="normal"
-                  in="SourceGraphic"
-                  in2="BackgroundImageFix"
-                  result="shape"
-                />
-                <feGaussianBlur
-                  stdDeviation="27.9144"
-                  result="effect1_foregroundBlur_3_2547"
-                />
+                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                <feGaussianBlur stdDeviation="27.9144" result="effect1_foregroundBlur_3_2547" />
               </filter>
             </defs>
           </svg>
@@ -104,11 +101,7 @@
 
         <div class="cc-logo">
           <span><img src="/cc-icon.svg" alt="ícone padrão de cartão" /></span>
-          <span
-            ><img
-              src="/cc-default.svg"
-              alt="ícone do cartão de crédito selecionado"
-          /></span>
+          <span><img src="/cc-default.svg" alt="ícone do cartão de crédito selecionado" /></span>
         </div>
 
         <div class="cc-info">
@@ -133,26 +126,26 @@
         </div>
       </section>
 
-      <form action="">
+      <form action="" id="form-card">
         <div class="input-wrapper">
           <label for="card-number">Número do cartão</label>
-          <input id="card-number" />
+          <input id="card-number" required />
         </div>
 
         <div class="input-wrapper">
           <label for="card-holder">Nome do titular</label>
-          <input id="card-holder" />
+          <input id="card-holder" required />
         </div>
 
         <div class="flex">
           <div class="input-wrapper">
             <label for="expiration-date">Expiração</label>
-            <input id="expiration-date" />
+            <input id="expiration-date" required />
           </div>
 
           <div class="input-wrapper">
             <label for="security-code">CVC</label>
-            <input id="security-code" />
+            <input id="security-code" required />
           </div>
         </div>
 
@@ -160,6 +153,9 @@
       </form>
     </div>
 
-    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="../src/js/main.js"></script>
+    <script src="../src/js/loader.js"></script>
+    <script src="../src/js/modal.js"></script>
   </body>
+
 </html>
