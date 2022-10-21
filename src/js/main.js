@@ -146,6 +146,9 @@ document.addEventListener("keydown", function (e) {
   if (e.key === "Enter" || e.key === "Escape") {
     if (!modal.classList.contains("hide")) {
       toggleModal();
+
+      document.querySelector("#add-card").removeAttribute("disabled");
+      document.location.reload(true);
     }
   }
 });
@@ -159,9 +162,9 @@ const toggleModal = function () {
 [closeModalButton, fadeModal].forEach((el) => {
   el.addEventListener("click", () => {
     toggleModal();
-    document.location.reload(true);
-    cardNumber.focus();
+
     document.querySelector("#add-card").removeAttribute("disabled");
+    document.location.reload(true);
   });
 });
 
