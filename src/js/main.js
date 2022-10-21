@@ -141,18 +141,6 @@ const fadeModal = document.querySelector("#fade-modal");
 const modal = document.querySelector("#modal");
 const closeModalButton = document.querySelector("#close-modal");
 
-document.addEventListener("keydown", function (e) {
-  console.log();
-  if (e.key === "Enter" || e.key === "Escape") {
-    if (!modal.classList.contains("hide")) {
-      toggleModal();
-
-      document.querySelector("#add-card").removeAttribute("disabled");
-      document.location.reload(true);
-    }
-  }
-});
-
 const toggleModal = function () {
   [fadeModal, modal].forEach((el) => {
     el.classList.toggle("hide");
@@ -166,6 +154,19 @@ const toggleModal = function () {
     document.querySelector("#add-card").removeAttribute("disabled");
     document.location.reload(true);
   });
+});
+
+// event key - close modal
+document.addEventListener("keydown", function (e) {
+  console.log();
+  if (e.key === "Enter" || e.key === "Escape") {
+    if (!modal.classList.contains("hide")) {
+      toggleModal();
+
+      document.querySelector("#add-card").removeAttribute("disabled");
+      document.location.reload(true);
+    }
+  }
 });
 
 const toggleMessage = function (title, message) {
