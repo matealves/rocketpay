@@ -14,7 +14,7 @@ Página de pagamento com cartão de crédito, com várias interações!
 
 <div id="visao">
 <h1>Visão geral</h1>
- Projeto desenvolvido para portifólio pessoal, muito comum em sites de <strong>e-commerce</strong>, onde é possível pagar com cartão de crédito. A página possui interações bem legais, ao digitar os dados, eles <strong>atualizam em tempo real</strong> como um tamplate de cartão de crédito ao lado do formulário, e mais... Foi utilizado expressão regular(<strong>Regex</strong>) e a biblioteca <strong>IMask</strong> que <strong>identifica qual a bandeira do cartão utilizado</strong> e o layout se adapta automaticamente, teste no link abaixo.
+ Projeto desenvolvido para portifólio pessoal, muito comum em sites de <strong>e-commerce</strong>, onde é possível pagar com cartão de crédito. A página possui interações bem legais, ao digitar os dados, eles <strong>atualizam em tempo real</strong> como um tamplate de cartão de crédito ao lado do formulário, e mais... Foi utilizado expressão regular(<strong>Regex</strong>) e a biblioteca <strong>IMask</strong> que <strong>identificam qual a bandeira do cartão utilizado</strong> e o layout se adapta automaticamente, teste no link abaixo.
 </div>
 <br>
 
