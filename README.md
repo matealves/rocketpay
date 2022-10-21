@@ -8,8 +8,7 @@ Página de pagamento com cartão de crédito, com várias interações!
 <p align="center">
   <a href="#visao">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#leng">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#contato">Contato</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="https://rocketpay-azure.vercel.app/" target="_blank">Testar</a> 
+  <a href="#contato">Contato</a>
 </p>
 <br>
 
