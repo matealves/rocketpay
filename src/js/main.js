@@ -1,5 +1,7 @@
 import "../css/index.css";
 import IMask from "imask";
+import { toggleLoader } from "../js/loader.js";
+import { toggleModal, toggleMessage, pageReload } from "../js/modal.js";
 
 const ccBgColor01 = document.querySelector(
   ".cc-bg svg > g g:nth-child(1) path"
@@ -125,12 +127,6 @@ cardHolder.addEventListener("input", () => {
   ccHolder.innerText =
     cardHolder.value.length === 0 ? "NOME DO TITULAR" : cardHolder.value;
 });
-
-const pageReload = function () {
-  setTimeout(() => {
-    document.location.reload(true);
-  }, 1000);
-};
 
 // IMask manipulation
 // on() = quando input for ativo

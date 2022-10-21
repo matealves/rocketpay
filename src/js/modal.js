@@ -3,7 +3,7 @@ const fadeModal = document.querySelector("#fade-modal");
 const modal = document.querySelector("#modal");
 const closeModalButton = document.querySelector("#close-modal");
 
-const toggleModal = function () {
+export const toggleModal = function () {
   [fadeModal, modal].forEach((el) => {
     el.classList.toggle("hide");
   });
@@ -30,7 +30,7 @@ document.addEventListener("keydown", function (e) {
   }
 });
 
-const toggleMessage = function (title, message) {
+export const toggleMessage = function (title, message) {
   const titleModal = document.querySelector(".title-modal");
   const messageModal = document.querySelector(".message-modal");
 
@@ -39,4 +39,10 @@ const toggleMessage = function (title, message) {
 
   fadeModal.classList.toggle("hide");
   modal.classList.toggle("hide");
+};
+
+export const pageReload = function () {
+  setTimeout(() => {
+    document.location.reload(true);
+  }, 1000);
 };
