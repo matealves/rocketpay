@@ -91,6 +91,7 @@ formCard.addEventListener("submit", (e) => {
   toggleLoader();
 
   setTimeout(() => {
+    cardNumber.blur();
     toggleLoader();
     toggleMessage("Pedido finalizado", "Dados salvos com sucesso!");
 
