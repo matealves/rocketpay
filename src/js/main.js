@@ -152,7 +152,7 @@ const toggleModal = function () {
     toggleModal();
 
     document.querySelector("#add-card").removeAttribute("disabled");
-    document.location.reload(true);
+    pageReload();
   });
 });
 
@@ -163,7 +163,7 @@ document.addEventListener("keydown", function (e) {
       toggleModal();
 
       document.querySelector("#add-card").removeAttribute("disabled");
-      document.location.reload(true);
+      pageReload();
     }
   }
 });
@@ -177,6 +177,12 @@ const toggleMessage = function (title, message) {
 
   fadeModal.classList.toggle("hide");
   modal.classList.toggle("hide");
+};
+
+const pageReload = function () {
+  setTimeout(() => {
+    document.location.reload(true);
+  }, 1000);
 };
 
 // IMask manipulation
