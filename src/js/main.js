@@ -158,7 +158,6 @@ const toggleModal = function () {
 
 // event key - close modal
 document.addEventListener("keydown", function (e) {
-  console.log();
   if (e.key === "Enter" || e.key === "Escape") {
     if (!modal.classList.contains("hide")) {
       toggleModal();
