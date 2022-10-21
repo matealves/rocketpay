@@ -91,7 +91,9 @@ formCard.addEventListener("submit", (e) => {
   toggleLoader();
 
   setTimeout(() => {
-    cardNumber.blur();
+    securityCode.blur();
+    document.querySelector("#add-card").setAttribute("disabled", "disabled");
+
     toggleLoader();
     toggleMessage("Pedido finalizado", "Dados salvos com sucesso!");
 
@@ -139,6 +141,15 @@ const fadeModal = document.querySelector("#fade-modal");
 const modal = document.querySelector("#modal");
 const closeModalButton = document.querySelector("#close-modal");
 
+document.addEventListener("keydown", function (e) {
+  console.log();
+  if (e.key === "Enter" || e.key === "Escape") {
+    if (!modal.classList.contains("hide")) {
+      toggleModal();
+    }
+  }
+});
+
 const toggleModal = function () {
   [fadeModal, modal].forEach((el) => {
     el.classList.toggle("hide");
@@ -148,8 +159,9 @@ const toggleModal = function () {
 [closeModalButton, fadeModal].forEach((el) => {
   el.addEventListener("click", () => {
     toggleModal();
-    location.reload();
+    document.location.reload(true);
     cardNumber.focus();
+    document.querySelector("#add-card").removeAttribute("disabled");
   });
 });
 
