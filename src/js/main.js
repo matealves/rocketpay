@@ -93,6 +93,7 @@ formCard.addEventListener("submit", (e) => {
     toggleMessage("Pedido finalizado", "Dados salvos com sucesso!");
 
     formCard.reset();
+    // resetCard();
   }, 2000);
 });
 
@@ -128,6 +129,7 @@ const toggleModal = function () {
 [closeModalButton, fadeModal].forEach((el) => {
   el.addEventListener("click", () => {
     toggleModal();
+    document.location.reload(true);
   });
 });
 
@@ -147,6 +149,22 @@ const toggleMessage = function (title, message) {
 const replaceCard = function (elem, value, valueDefault) {
   elem.innerText = value.length === 0 ? valueDefault : value;
 };
+
+// const resetCard = function () {
+//   formCard.reset();
+
+//   const ccHolder = document.querySelector(".cc-holder .value");
+//   const ccSecurity = document.querySelector(".cc-security .value");
+//   const ccNumber = document.querySelector(".cc-number");
+//   const ccExpiration = document.querySelector(".cc-expiration .value");
+
+//   ccNumber.innerText = "1234 5678 9012 3456";
+//   ccHolder.innerText = "NOME DO TITULAR";
+//   ccExpiration.innerText = "02/29";
+//   ccSecurity.innerText = "123";
+
+//   setCardType("default");
+// };
 
 securityCodeMasked.on("accept", () => {
   updateSecurityCode(securityCodeMasked.value);
